@@ -20,7 +20,7 @@
       </NavLi>
       <Dropdown class="w-44 z-20 ">
         <DropdownItem class="text-lg" href="/about">Join now</DropdownItem>
-        <DropdownItem class="text-lg" href="/about">Install mods</DropdownItem>
+        <DropdownItem class="text-lg" href="/map">Map</DropdownItem>
         <DropdownItem class="text-lg" href="/about">World Download</DropdownItem>
       </Dropdown>
       <NavLi class="text-xl text-white dark:text-white" href="/about">About</NavLi>
