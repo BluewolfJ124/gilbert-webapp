@@ -85,7 +85,6 @@
   overflow: hidden;    
   font-family: monospace;  
   font-size: 28px;
-  color: rgba(255,255,255,.70);
   width: 400px;
 }
 .typewriter {
@@ -96,6 +95,6 @@
   to{border-right-color: transparent;}
 }
 </style>
-<div class="box bg-background dark:bg-background">
-    <h2 class="typewriter">Welcome to my website!</h2>
+<div class="box bg-primary-50 dark:bg-background">
+    <h2 class="typewriter text-neutral-800 dark:text-neutral-300">Welcome to my website!</h2>
 </div>

@@ -35,8 +35,8 @@
 </script>
 <Nav/>
 <Box />   
-<Heading tag="h2" customSize="text-5xl font-bold text-center"> What is Gilbert?</Heading>
-<P class="p-10 text-2xl" color="text-Lightparagraph dark:text-paragraph">Gilbert the Beanie Boo is a cute pink giraffe with purple spots. She is super soft to cuddle! 🐆🌈 Her birthday is August 23rd, loves to eat icecream. 💖✨ Here are some pictures of Gilbert:</P>
+<h2 class="heading-primary"> What is Gilbert?</h2>
+<p class="text-lightParagraph dark:text-paragraph">Gilbert the Beanie Boo is a cute pink giraffe with purple spots. She is super soft to cuddle! 🐆🌈 Her birthday is August 23rd, loves to eat icecream. 💖✨ Here are some pictures of Gilbert:</p>
 <div bind:this={container} class="flex overflow-x-auto max-w-full scroll-smooth gap-5 scroll-snap-none no-scrollbar" >
     <div class={imgClass}>
         <img src={Gilbert1} alt="Gilbert 1" class="rounded-lg">
@@ -51,11 +51,11 @@
         <img src={Gilbert4} alt="Gilbert 4" class="rounded-lg">
     </div>
 </div>
-<Heading tag="h2" customSize="text-5xl font-bold text-center">Join the Minecraft Server!</Heading>
-<P class="p-10 text-2xl" color="text-Lightparagraph dark:text-paragraph">Join our modded minecraft server.</P>
-<P class="pl-10 text-2xl inline-block" color="text-Lightparagraph dark:text-paragraph">Click here if you like Gilbert:</P> <Button class='btn bg-pink-500'>I like Gilbert</Button>
-<P class="p-10 text-2xl" color="text-Lightparagraph dark:text-paragraph">1 person likes gilbert</P>
-<Heading tag="h2" customSize="text-5xl font-bold"> Where is Gilbert? </Heading>
+<h2 class="heading-primary">Join the Minecraft Server!</h2>
+<p class="text-lightParagraph dark:text-paragraph">Join our modded minecraft server.</p>
+<p class="text-lightParagraph dark:text-paragraph inline-block">Click here if you like Gilbert:</p> <Button class='btn bg-pink-500'>I like Gilbert</Button>
+<p class="text-lightParagraph dark:text-paragraph">1 person likes gilbert</p>
+<h2 class="heading-primary"> Where is Gilbert? </h2>
     <P class="text-2xl p-10" color="text-Lightparagraph dark:text-paragraph">Gilbert lives on my bed and she is very cute. Sometimes she visits my sisters bed to sleep sometimes. </P>
     <Heading tag="h1" class="mb-4" customSize="text-4xl font-bold  md:text-5xl lg:text-6xl">Contact</Heading>
 <ul>
