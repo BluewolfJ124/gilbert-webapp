@@ -1,13 +1,9 @@
 <script>
-    import Gilbert1 from "$lib/images/1.jpg"
-    import Gilbert2 from "$lib/images/2.jpg"
-    import Gilbert3 from "$lib/images/3.jpg"
-    import Gilbert4 from "$lib/images/4.jpg"
     import Nav from "./navbar.svelte"
     import Box from "./top.svelte"
     import { Heading, P, A } from 'flowbite-svelte';
     import { Button } from 'flowbite-svelte';
-    let imgClass = "inline-block flex-none w-[480px] h-[320px] bg-gradient-to-tr from-primary-500 to-secondary-800 rounded-lg transition-all duration-200 justify-center items-center p-1 hover:scale-95";
+    let imgClass = "inline-block flex-none w-[480px] h-[324px] bg-gradient-to-tr from-primary-500 to-secondary-800 rounded-lg transition-all duration-200 justify-center items-center p-1 hover:scale-95";
     let container;
 
     // Function to update container scroll position based on window scroll
@@ -39,16 +35,16 @@
 <p class="text-lightParagraph dark:text-paragraph">Gilbert the Beanie Boo is a cute pink giraffe with purple spots. She is super soft to cuddle! 🐆🌈 Her birthday is August 23rd, loves to eat icecream. 💖✨ Here are some pictures of Gilbert:</p>
 <div bind:this={container} class="flex overflow-x-auto max-w-full scroll-smooth gap-5 scroll-snap-none no-scrollbar" >
     <div class={imgClass}>
-        <img src={Gilbert1} alt="Gilbert 1" class="rounded-lg">
+        <enhanced:img src="/static/1.jpg?w=480" alt="Gilbert 1" class="rounded-lg">
     </div>
     <div class={imgClass}>
-        <img src={Gilbert2} alt="Gilbert 2" class="rounded-lg">
+        <enhanced:img src="/static/2.jpg?w=480" alt="Gilbert 2" class="rounded-lg">
     </div>
     <div class={imgClass}>
-        <img src={Gilbert3} alt="Gilbert 3" class="rounded-lg">
+        <enhanced:img src="/static/3.jpg?w=480" alt="Gilbert 3" class="rounded-lg">
     </div>
     <div class={imgClass}>
-        <img src={Gilbert4} alt="Gilbert 4" class="rounded-lg">
+        <enhanced:img src="/static/4.jpg?w=480" alt="Gilbert 4" class="rounded-lg">
     </div>
 </div>
 <h2 class="heading-primary">Join the Minecraft Server!</h2>

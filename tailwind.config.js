@@ -16,7 +16,7 @@ module.exports = {
         lightBackground: '#fdfbfc',
         fontPrimary : '#fffafc',
         fontPrimaryLight: '#090507',
-        paragraph: '#94a3b8',
+        paragraph: '#e4e6ed',
         paragraphLight: '#475569',
       }
     },

@@ -20,6 +20,9 @@
             scrollbar-width: none;  /* Firefox */
       }
       .heading-primary {
-        @apply text-6xl font-bold text-fontPrimaryLight dark:text-fontPrimary tracking-tight text-center mt-10;
+        @apply text-5xl font-bold text-fontPrimaryLight dark:text-fontPrimary tracking-tight text-center my-4;
+      }
+      .heading-secondary {
+        @apply text-4xl font-bold text-fontPrimaryLight dark:text-fontPrimary tracking-tight my-2;
       }
 }

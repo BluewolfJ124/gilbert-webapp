@@ -18,10 +18,10 @@
       <NavLi class="cursor-pointer text-xl text-fontPrimaryLight dark:text-fontPrimary" >
         Minecraft Server<ChevronDownOutline class="w-6 h-6 ms-2 dark:text-white inline" />
       </NavLi>
-      <Dropdown class="w-44 z-20 ">
+      <Dropdown class="w-44 z-50">
         <DropdownItem class="text-lg" href="/about">Join now</DropdownItem>
         <DropdownItem class="text-lg" href="/map">Map</DropdownItem>
-        <DropdownItem class="text-lg" href="/worldownload">World Download</DropdownItem>
+        <DropdownItem class="text-lg" href="/worlddownload">World Download</DropdownItem>
       </Dropdown>
       <NavLi class="text-xl text-fontPrimaryLight dark:text-fontPrimary" href="/about">About</NavLi>
       <NavLi class="text-xl text-fontPrimaryLight dark:text-fontPrimary" href="/about">Contact</NavLi>
