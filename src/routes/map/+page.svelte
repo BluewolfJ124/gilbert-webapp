@@ -2,6 +2,7 @@
     import Nav from "../navbar.svelte"
     import { Heading, P, A } from 'flowbite-svelte';
     import { Spinner } from 'flowbite-svelte';
+    import Footer from "../footer.svelte"
 
 </script>
 
@@ -12,3 +13,5 @@
     <!-- Fallback content for browsers that do not support iframes -->
     Your browser does not support iframes.
   </iframe>
+<br>
+<Footer />

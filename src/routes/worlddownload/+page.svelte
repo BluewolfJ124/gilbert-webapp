@@ -3,6 +3,7 @@
     import { Heading, P, A, Button } from 'flowbite-svelte';
     import { Alert, Spinner } from 'flowbite-svelte';
     import { InfoCircleSolid } from 'flowbite-svelte-icons';
+    import Footer from "../footer.svelte"
     let currentIndex = 0;
     const images = [
         '/gallery1-min.png',
@@ -86,3 +87,4 @@
 <h2 class="heading-secondary">Play</h2>
 <p class="text-lightParagraph dark:text-paragraph">The world file is now inside your local singleplayer saves! To join the world, you must launch <b>Minecraft 1.21.1</b>. You can join the world without mods, however, new chunks that are generated will be different as there is no custom terrain generation.</p>
 <enhanced:img src="/static/file-tutorial-4.png?w=1080" alt="play the world in singleplayer" class="w-full p-10"/>
+<Footer />

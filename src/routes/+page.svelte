@@ -1,39 +1,56 @@
 <script>
     import Nav from "./navbar.svelte"
     import Box from "./top.svelte"
+    import Footer from "./footer.svelte"
     import { Heading, P, A } from 'flowbite-svelte';
     import { Button } from 'flowbite-svelte';
     let imgClass = "inline-block flex-none w-[480px] h-[324px] bg-gradient-to-tr from-primary-500 to-secondary-800 rounded-lg transition-all duration-200 justify-center items-center p-1 hover:scale-95";
     let container;
 
-    // Function to update container scroll position based on window scroll
     function syncScroll() {
       if (typeof window !== 'undefined') {
-        // Sync container scroll position with window scroll position
-        container.scrollLeft = window.scrollY+50;
+        container.scrollLeft = window.scrollY;
       }
     }
-
-    // Listen for the scroll event on the window
     import { onMount, onDestroy } from 'svelte';
-
     onMount(() => {
       if (typeof window !== 'undefined') {
         window.addEventListener('scroll', syncScroll);
       }
     });
-
     onDestroy(() => {
       if (typeof window !== 'undefined') {
         window.removeEventListener('scroll', syncScroll);
       }
     });
+  
+    let count = $state(0);
+    onMount(async () => {
+      const response = await fetch('https://counter.bluewolfj124.workers.dev/read'); // Replace with your API endpoint
+      if (!response.ok) {
+        console.log('Error fetching counter: ${response.status}');
+      }
+      const data = await response.json();
+      count = data.count;
+    });
+    const fetchData = async () => {
+    try {
+      const response = await fetch('https://counter.bluewolfj124.workers.dev/increment'); // Replace with your actual API endpoint
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status}`);
+      }
+      count++;
+      console.log('Request successful');
+    } catch (err) {
+      console.error('Failed to fetch:', err.message); // Log any errors to the console
+    }
+  };
 </script>
 <Nav/>
 <Box />   
 <h2 class="heading-primary"> What is Gilbert?</h2>
 <p class="text-lightParagraph dark:text-paragraph">Gilbert the Beanie Boo is a cute pink giraffe with purple spots. She is super soft to cuddle! 🐆🌈 Her birthday is August 23rd, loves to eat icecream. 💖✨ Here are some pictures of Gilbert:</p>
-<div bind:this={container} class="flex overflow-x-auto max-w-full scroll-smooth gap-5 scroll-snap-none no-scrollbar" >
+<div bind:this={container} class="flex overflow-x-auto max-w-full gap-5 scroll-snap-none no-scrollbar" >
     <div class={imgClass}>
         <enhanced:img src="/static/1.jpg?w=480" alt="Gilbert 1" class="rounded-lg">
     </div>
@@ -48,9 +65,9 @@
     </div>
 </div>
 <h2 class="heading-primary">Join the Minecraft Server!</h2>
-<p class="text-lightParagraph dark:text-paragraph">Join our modded minecraft server.</p>
-<p class="text-lightParagraph dark:text-paragraph inline-block">Click here if you like Gilbert:</p> <Button class='btn bg-pink-500'>I like Gilbert</Button>
-<p class="text-lightParagraph dark:text-paragraph">1 person likes gilbert</p>
+<p class="text-lightParagraph dark:text-paragraph my-10">I'm currently working on Gilbert server season 2. I will update the server version to 1.21.4, but there are some mods that aren't updated yet.</p>
+<p class="text-lightParagraph dark:text-paragraph inline-block">Click here if you like Gilbert:</p> <Button on:click={fetchData} class='btn bg-pink-500'>I like Gilbert</Button>
+<p class="text-lightParagraph dark:text-paragraph">{count} people like gilbert</p>
 <h2 class="heading-primary"> Where is Gilbert? </h2>
     <P class="text-2xl p-10" color="text-Lightparagraph dark:text-paragraph">Gilbert lives on my bed and she is very cute. Sometimes she visits my sisters bed to sleep sometimes. </P>
     <Heading tag="h1" class="mb-4" customSize="text-4xl font-bold  md:text-5xl lg:text-6xl">Contact</Heading>
@@ -61,3 +78,4 @@
 </ul>
 <br>
 <br>
+<Footer/>
