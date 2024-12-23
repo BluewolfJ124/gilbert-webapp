@@ -7,7 +7,10 @@
     const images = [
         '/gallery1-min.png',
         '/gallery2-min.png',
-        '/gallery3-min.png'
+        '/gallery3-min.png',
+        '/gallery4-min.png',
+        '/gallery5-min.png',
+        '/gallery6-min.png',
   ];
   let downloading = false; // This controls the visibility of the element
 
@@ -50,11 +53,7 @@
             style="transform: translateX(-{currentIndex * 100}%)"
           >
             {#each images as image}
-              <img
-                src={image}
-                alt="Slideshow Image"
-                class="w-full h-auto object-cover"
-              />
+              <img  src={image} alt="Slideshow" class="w-full h-auto object-cover" loading="lazy"/>
             {/each}
     
           </div>
