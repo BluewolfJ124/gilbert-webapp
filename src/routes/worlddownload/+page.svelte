@@ -5,14 +5,16 @@
     import { InfoCircleSolid } from 'flowbite-svelte-icons';
     import Footer from "../footer.svelte"
     let currentIndex = 0;
+    import gallery1 from '$lib/images/gallery1-min.png';
+    import gallery2 from '$lib/images/gallery2-min.png';
+    import gallery3 from '$lib/images/gallery3-min.png';
+    import gallery4 from '$lib/images/gallery4-min.png';
     const images = [
-        '/gallery1-min.png',
-        '/gallery2-min.png',
-        '/gallery3-min.png',
-        '/gallery4-min.png',
-        '/gallery5-min.png',
-        '/gallery6-min.png',
-  ];
+      gallery1,
+      gallery2,
+      gallery3,
+      gallery4
+    ];
   let downloading = false; // This controls the visibility of the element
 
   function toggleVisibility() {

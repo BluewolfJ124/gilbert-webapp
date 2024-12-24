@@ -6,7 +6,6 @@
     import { Button } from 'flowbite-svelte';
     let imgClass = "inline-block flex-none w-[480px] h-[324px] bg-gradient-to-tr from-primary-500 to-secondary-800 rounded-lg transition-all duration-200 justify-center items-center p-1 hover:scale-95";
     let container;
-
     function syncScroll() {
       if (typeof window !== 'undefined') {
         container.scrollLeft = window.scrollY;
@@ -47,21 +46,23 @@
   };
 </script>
 <Nav/>
+<div class="bg-[url('/static/gradient.png')]">
+  <Heading tag="h1" class="mb-4" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl">Welcome to my Website</Heading>
 <Box />   
 <h2 class="heading-primary"> What is Gilbert?</h2>
 <p class="text-lightParagraph dark:text-paragraph">Gilbert the Beanie Boo is a cute pink giraffe with purple spots. She is super soft to cuddle! 🐆🌈 Her birthday is August 23rd, loves to eat icecream. 💖✨ Here are some pictures of Gilbert:</p>
 <div bind:this={container} class="flex overflow-x-auto max-w-full gap-5 scroll-snap-none no-scrollbar" >
     <div class={imgClass}>
-        <enhanced:img src="/static/1.jpg?w=480" alt="Gilbert 1" class="rounded-lg">
+        <enhanced:img src="$lib/images/1.jpg" alt="Gilbert 1" class="rounded-lg">
     </div>
     <div class={imgClass}>
-        <enhanced:img src="/static/2.jpg?w=480" alt="Gilbert 2" class="rounded-lg">
+        <enhanced:img src="$lib/images/2.jpg" alt="Gilbert 2" class="rounded-lg">
     </div>
     <div class={imgClass}>
-        <enhanced:img src="/static/3.jpg?w=480" alt="Gilbert 3" class="rounded-lg">
+        <enhanced:img src="$lib/images/3.jpg" alt="Gilbert 3" class="rounded-lg">
     </div>
     <div class={imgClass}>
-        <enhanced:img src="/static/4.jpg?w=480" alt="Gilbert 4" class="rounded-lg">
+        <enhanced:img src="$lib/images/4.jpg" alt="Gilbert 4" class="rounded-lg">
     </div>
 </div>
 <h2 class="heading-primary">Join the Minecraft Server!</h2>
@@ -76,6 +77,7 @@
     <li class="text-4xl text-Lightparagraph dark:text-paragraph"><svg width="64px" height="64px" viewBox="0 0 20 20" class='inline-block' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg> jamie@gilbertweb.site</li>
     <li class="text-4xl text-Lightparagraph dark:text-paragraph"> <svg width="64px" height="64px" class="inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <rect x="3" y="5" width="18" height="14" rx="2" stroke="#000000" stroke-width="2" stroke-linecap="round"></rect> </g></svg> BluewolfJ124</li>
 </ul>
+</div>
 <br>
 <br>
 <Footer/>

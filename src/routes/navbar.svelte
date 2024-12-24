@@ -7,7 +7,7 @@
     $: activeUrl = $page.url.pathname;
     import { DarkMode } from 'flowbite-svelte';
 </script>
-  <Navbar class='px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b bg-white dark:bg-background'>
+  <Navbar class='px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b bg-lightNavbar dark:bg-navbar backdrop-blur-lg'>
     <NavBrand href="/">
       <img src={giraffe} class="me-3 h-6 sm:h-9" alt="Logo" />
       <span class="self-center whitespace-nowrap text-4xl font-semibold text-fontPrimaryLight dark:text-fontPrimary">Gilbert Website</span>
