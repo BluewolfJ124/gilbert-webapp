@@ -73,20 +73,20 @@
 <br>
 <h2 class="heading-secondary">Transfer it into your saves folder</h2>
 <p class="text-lightParagraph dark:text-paragraph">Open your minecraft saves folder. You can find this folder by opening file explorer and typing <b>%appdata%\.minecraft\saves</b> into the top bar. Once you open this folder, drag the zip file that you downloaded into the saves folder.</p>
-<div class="flex items-center justify-center p-10">
-  <img src="/file-tutorial-1.png" alt="file explorer" class="object-center"/>
+<div class="flex items-center justify-center p-10"> 
+  <enhanced:img src="/static/file-tutorial-1.png?enhanced" sizes="min(1280px, 100vw)" alt="file explorer" class="object-center"/>
 </div>
 
 <br>
 <h2 class="heading-secondary">Extract the file</h2>
 <p class="text-lightParagraph dark:text-paragraph">Right click the zip file and select <b>Extract all</b>. No need to change the extract path, it will extract all the files into the correct folder by default.</p>
 <div class="flex p-10">
-  <img src="/file-tutorial-2.png" alt="extract all button" class="mr-20"/>
-  <img src="/file-tutorial-3.png" alt="extracted file"/>
+  <enhanced:img src="/static/file-tutorial-2.png?enhanced" alt="extract all button" class="mr-20"/>
+  <enhanced:img src="/static/file-tutorial-3.png?enhanced" alt="extracted file"/>
 </div>
 <p class="text-lightParagraph dark:text-paragraph">Once you finish extracting the world file, you can delete the original zip file.</p>
 <br>
 <h2 class="heading-secondary">Play</h2>
 <p class="text-lightParagraph dark:text-paragraph">The world file is now inside your local singleplayer saves! To join the world, you must launch <b>Minecraft 1.21.1</b>. You can join the world without mods, however, new chunks that are generated will be different as there is no custom terrain generation.</p>
-<enhanced:img src="/static/file-tutorial-4.png?w=1080" alt="play the world in singleplayer" class="w-full p-10"/>
+<enhanced:img src="/static/file-tutorial-4.png?enhanced" sizes="min(1280px, 100vw)" alt="play the world in singleplayer" class="w-full p-10"/>
 <Footer />
