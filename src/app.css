@@ -8,6 +8,7 @@
       @apply text-2xl;
     }
   }
+  
 
 @layer utilities{
         /* Hide scrollbar for Chrome, Safari and Opera */
@@ -20,7 +21,7 @@
             scrollbar-width: none;  /* Firefox */
       }
       .heading-primary {
-        @apply text-5xl font-bold text-fontPrimaryLight dark:text-fontPrimary tracking-tight text-center my-4;
+        @apply text-5xl font-semibold text-fontPrimaryLight dark:text-fontPrimary tracking-tight text-center my-4;
       }
       .heading-secondary {
         @apply text-4xl font-bold text-fontPrimaryLight dark:text-fontPrimary tracking-tight my-2;

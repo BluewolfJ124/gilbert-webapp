@@ -5,6 +5,7 @@
     import { ChevronDownOutline } from 'flowbite-svelte-icons';
     import { page } from '$app/stores';
     $: activeUrl = $page.url.pathname;
+    let activeClass = 'text-white md:text-primary-600 md:dark:text-secondary-600';
     import { DarkMode } from 'flowbite-svelte';
 </script>
   <Navbar class='px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b bg-lightNavbar dark:bg-navbar backdrop-blur-lg'>
@@ -13,7 +14,7 @@
       <span class="self-center whitespace-nowrap text-4xl font-semibold text-fontPrimaryLight dark:text-fontPrimary">Gilbert Website</span>
     </NavBrand>
     <NavHamburger />
-    <NavUl {activeUrl}>
+    <NavUl {activeUrl} {activeClass}>
       <NavLi class="text-xl text-fontPrimaryLight dark:text-fontPrimary" href="/">Home</NavLi>
       <NavLi class="cursor-pointer text-xl text-fontPrimaryLight dark:text-fontPrimary" >
         Minecraft Server<ChevronDownOutline class="w-6 h-6 ms-2 dark:text-white inline" />
@@ -28,4 +29,4 @@
       <DarkMode class="text-fontPrimaryLight dark:text-fontPrimary transform -translate-y-1"/>
     </NavUl>
   </Navbar>
-<div style="margin-bottom: 10rem"></div>
+  <div class="mb-40"></div>

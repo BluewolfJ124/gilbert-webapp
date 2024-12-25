@@ -2,8 +2,7 @@
     import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon } from 'flowbite-svelte';
     import { YoutubeSolid, GithubSolid, DiscordSolid } from 'flowbite-svelte-icons';
   </script>
-  
-  <Footer footerType="socialmedia" class="bg-secondary-600 dark:bg-secondary-900 rounded-2xl -mx-[10vw]">
+  <Footer footerType="socialmedia" class="bg-lightBackground dark:bg-background -mx-[10vw] bg-gradient-to-t from-white dark:from-black">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
       </div>
