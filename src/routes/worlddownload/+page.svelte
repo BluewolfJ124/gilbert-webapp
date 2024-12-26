@@ -63,6 +63,7 @@
         </div>  
     </div>  
 </div>
+<hr class="my-12 h-0.5 border-t-0 bg-neutral-200 dark:bg-white/10" />
 <h2 class="heading-primary mt-10"> How to install the world</h2>
 <Alert border color="red" class="mx-20">
     <InfoCircleSolid slot="icon" class="w-5 h-15" />

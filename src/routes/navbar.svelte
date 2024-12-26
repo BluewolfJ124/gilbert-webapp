@@ -1,7 +1,7 @@
 <script>
     import giraffe from "$lib/images/giraffe.svg"
     import { goto } from '$app/navigation'
-    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Dropdown, DropdownItem, DropdownDivider } from 'flowbite-svelte';
+    import { Button, Navbar, NavBrand, NavLi, NavUl, NavHamburger, Dropdown, DropdownItem, DropdownDivider } from 'flowbite-svelte';
     import { ChevronDownOutline } from 'flowbite-svelte-icons';
     import { page } from '$app/stores';
     $: activeUrl = $page.url.pathname;
@@ -20,7 +20,7 @@
         Minecraft Server<ChevronDownOutline class="w-6 h-6 ms-2 dark:text-white inline" />
       </NavLi>
       <Dropdown class="w-44 z-50">
-        <DropdownItem class="text-lg" href="/about">Join now</DropdownItem>
+        <DropdownItem class="text-lg" href="/mods">Mods</DropdownItem>
         <DropdownItem class="text-lg" href="/map">Map</DropdownItem>
         <DropdownItem class="text-lg" href="/worlddownload">World Download</DropdownItem>
       </Dropdown>
